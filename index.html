@@ -15,7 +15,8 @@
 			<div id="startMsg">OAM'owe "/version /pogoda" && cenzor uruchomi słowo: "dziewka"</div>
 			<div id="messages" class="messages"></div>
 			<input id="input" type="text" placeholder="Czego potrzebujesz?" autocomplete="off" autofocus="true"/>
-			<button id="submit" onclick="if(document.getElementById('input').value.length != 0){output(document.getElementById('input').value);}">wyślij</button>
+			<button id="submit" onclick="if(document.getElementById('input').value.length != 0){output(consore(consored, ((document.getElementById('input').value).toLowerCase()).split(' ')));}">wyślij</button>
+
 		</div>
 	</div>
 </body>

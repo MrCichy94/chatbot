@@ -8,8 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.code === "Enter") {
       let input = inputField.value;
       inputField.value = "";
-      let wordsString = consore(consored, (input.toLowerCase()).split(' '));
-      output(wordsString);
+      output(consore(consored, (input.toLowerCase()).split(' ')));
     }
   });
 });
