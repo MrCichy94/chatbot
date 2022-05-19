@@ -11,9 +11,11 @@
 
 		<div id="chat" class="chat">
 			<div id="startMsg">dostępne wiadomości: hej, pogoda, dowidzenia, +uniwersalna</div>
-			<div id="startMsg">testowe: "hej pogoda" - próba wielokrotnych</div>
+			<div id="startMsg">testowe: "hej pogoda"/"jaka dziś pogoda" - próba wielokrotnych</div>
+			<div id="startMsg">OAM'owe "/version /pogoda" && cenzor uruchomi słowo: "dziewka"</div>
 			<div id="messages" class="messages"></div>
-			<input id="input" type="text" placeholder="Czego potrzebujesz?" autocomplete="off" autofocus="true" />
+			<input id="input" type="text" placeholder="Czego potrzebujesz?" autocomplete="off" autofocus="true"/>
+			<button id="submit" onclick="if(document.getElementById('input').value.length != 0){output(document.getElementById('input').value);}">wyślij</button>
 		</div>
 	</div>
 </body>
